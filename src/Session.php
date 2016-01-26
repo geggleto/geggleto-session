@@ -45,10 +45,13 @@ class Session implements \ArrayAccess
 
     /**
      * @param $name
-     * @return mixed
+     * @return mixed|null
      */
     public function getFlash($name) {
-        return $_SESSION['flash'][$name];
+        if ( isset($_SESSION['flash'][$name])) {
+            return $_SESSION['flash'][$name];
+        }
+        return null;
     }
 
 
