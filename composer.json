@@ -1,0 +1,16 @@
+{
+  "name": "geggleto/session",
+  "description": "Session Object Wrapper",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Glenn Eggleton",
+      "email": "geggleto@gmail.com"
+    }
+  ],
+  "autoload" : {
+    "psr-4" : {
+      "Geggleto\\" : "src"
+    }
+  }
+}
