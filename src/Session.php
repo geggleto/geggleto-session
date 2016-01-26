@@ -48,8 +48,8 @@ class Session implements \ArrayAccess
      * @return mixed|null
      */
     public function getFlash($name) {
-        if ( isset($_SESSION['flash'][$name])) {
-            return $_SESSION['flash'][$name];
+        if ( isset($_SESSION['flashPrevious'][$name])) {
+            return $_SESSION['flashPrevious'][$name];
         }
         return null;
     }
