@@ -36,7 +36,9 @@ class Session implements \ArrayAccess
     }
 
     public function __destruct() {
-        unset($_SESSION['flash']);
+        if (isset($_SESSION)) {
+            unset($_SESSION['flash']);
+        }
     }
 
     /**
